@@ -44,6 +44,7 @@ git remote add bt  ssh://git@bitbucket.org/cmch/ghbttest.git
 
 git remote add btf ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git
 
+git remote add gh git@github.com:cmchaol/ghbttest.git      
 
 
 #+END_SRC

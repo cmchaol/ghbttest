@@ -13,74 +13,6 @@
 |    |                                |
 
 
-** 50
-
-
-#+HEADERS: :dir /tmp
-#+BEGIN_SRC sh
-
-# ssh clone this repository   
-
-  git clone git@github.com:cmchaol/ghbttest.git                    # from github
-
-#  git clone ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git   # from bitbucket with port 443
-
-#  git clone ssh://git@bitbucket.org/cmch/ghbttest.git              # from bitbucket with port 22
-
-
-# move inside the local repository                       
-
-cd ghbttest
-                                                          
-# configure user.email                                   
-
-git config user.email "cmchaol@users.noreply.github.cxom"
-
-# configure user.name 
-
-git config user.name "cmchaol"
-
-git remote add bt  ssh://git@bitbucket.org/cmch/ghbttest.git
-
-git remote add btf ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git
-
-git remote add gh git@github.com:cmchaol/ghbttest.git      
-
-
-#+END_SRC
-
-
-
-** 40
-
-
-#+HEADERS: :dir /tmp
-#+BEGIN_SRC sh
-
-# ssh clone this repository   
-
-  git clone git@github.com:cmchaol/ghbttest.git                    # from github
-
-#  git clone ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git   # from bitbucket with port 443
-
-#  git clone ssh://git@bitbucket.org/cmch/ghbttest.git              # from bitbucket with port 22
-
-
-# move inside the local repository                       
-
-cd ghbttest
-                                                          
-# configure user.email                                   
-
-git config user.email "cmchaol@users.noreply.github.cxom"
-
-# configure user.name 
-
-git config user.name "cmchaol"
-
-#+END_SRC
-
-
 ** 20
 
 | login github               |                  |
@@ -206,7 +138,75 @@ git config user.name "cmchaol"
 
 
 
+** 40
+
+
+#+HEADERS: :dir /tmp
+#+BEGIN_SRC sh
+
+# ssh clone this repository   
+
+  git clone git@github.com:cmchaol/ghbttest.git                    # from github
+
+#  git clone ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git   # from bitbucket with port 443
+
+#  git clone ssh://git@bitbucket.org/cmch/ghbttest.git              # from bitbucket with port 22
+
+
+# move inside the local repository                       
+
+cd ghbttest
+                                                          
+# configure user.email                                   
+
+git config user.email "cmchaol@users.noreply.github.cxom"
+
+# configure user.name 
+
+git config user.name "cmchaol"
+
+#+END_SRC
+
+
+** 50
+
+
+#+HEADERS: :dir /tmp
+#+BEGIN_SRC sh
+
+# ssh clone this repository   
+
+  git clone git@github.com:cmchaol/ghbttest.git                    # from github
+
+#  git clone ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git   # from bitbucket with port 443
+
+#  git clone ssh://git@bitbucket.org/cmch/ghbttest.git              # from bitbucket with port 22
+
+
+# move inside the local repository                       
+
+cd ghbttest
+                                                          
+# configure user.email                                   
+
+git config user.email "cmchaol@users.noreply.github.cxom"
+
+# configure user.name 
+
+git config user.name "cmchaol"
+
+git remote add bt  ssh://git@bitbucket.org/cmch/ghbttest.git
+
+git remote add btf ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git
+
+git remote add gh git@github.com:cmchaol/ghbttest.git      
+
+
+#+END_SRC
 
 
 
-* test [2017-05-08 Mon 11:46]
+
+
+
+

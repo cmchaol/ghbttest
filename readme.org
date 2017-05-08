@@ -22,7 +22,40 @@
 
 inside emacs, magit
 
+| if firewall block port 22 | 1  | 2   |
+|---------------------------+----+-----|
+| M-x magit-remote-add      |    |     |
+|                           |    |     |
+| Remote name:              | bt | btf |
+|                           |    |     |
+| Remote url:               | u1 | u2  |
+|                           |    |     |
 
+  
+
+|                                                      |    |
+| no firewall block port 22                            |  1 |
+|                                                      |    |
+| under firewall block port 22                         |  2 |
+|------------------------------------------------------+----|
+|                                                      |    |
+| ssh://git@bitbucket.org/cmch/ghbttest.git            | u1 |
+|                                                      |    |
+| ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git | u2 |
+|                                                      |    |
+
+git remote -v
+
+bt      ssh://git@bitbucket.org/cmch/ghbttest.git (fetch)
+bt      ssh://git@bitbucket.org/cmch/ghbttest.git (push)
+
+btf     ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git (fetch)
+btf     ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git (push)
+
+origin  git@github.com:cmchaol/ghbttest.git (fetch)
+origin  git@github.com:cmchaol/ghbttest.git (push)
+
+128 git … push -v bt master:refs/heads/master
 
 
 *** original instruction

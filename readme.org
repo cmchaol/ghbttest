@@ -7,6 +7,73 @@
 |    |                                |
 | 30 | setup the bitbucket repository |
 |    |                                |
+| 40 | git clone                      |
+|    |                                |
+| 50 | git push                       |
+|    |                                |
+
+
+** 40
+
+
+#+HEADERS: :dir /tmp
+#+BEGIN_SRC sh
+
+# ssh clone this repository   
+
+  git clone git@github.com:cmchaol/ghbttest.git                    # from github
+
+#  git clone ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git   # from bitbucket with port 443
+
+#  git clone ssh://git@bitbucket.org/cmch/ghbttest.git              # from bitbucket with port 22
+
+
+# move inside the local repository                       
+
+cd ghbttest
+                                                          
+# configure user.email                                   
+
+git config user.email "cmchaol@users.noreply.github.cxom"
+
+# configure user.name 
+
+git config user.name "cmchaol"
+
+#+END_SRC
+
+
+** 20
+
+| login github               |                  |
+|                            |                  |
+| create a new repository    | cmchaol/ghbttest |
+|                            |                  |
+| write down the information |                  |
+|                            |                  |
+
+
+#+HEADERS: :dir /tmp
+#+BEGIN_SRC sh
+
+# ssh clone this repository   
+
+  git clone git@github.com:cmchaol/ghbttest.git
+
+# move inside the local repository                       
+
+cd ghbttest
+                                                          
+# configure user.email                                   
+
+git config user.email "cmchaol@users.noreply.github.cxom"
+
+# configure user.name 
+
+git config user.name "cmchaol"
+
+#+END_SRC
+
 
 ** 30
 
@@ -47,12 +114,17 @@ inside emacs, magit
 git remote -v
 
 bt      ssh://git@bitbucket.org/cmch/ghbttest.git (fetch)
+
 bt      ssh://git@bitbucket.org/cmch/ghbttest.git (push)
 
+
 btf     ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git (fetch)
+
 btf     ssh://git@altssh.bitbucket.org:443/cmch/ghbttest.git (push)
 
+
 origin  git@github.com:cmchaol/ghbttest.git (fetch)
+
 origin  git@github.com:cmchaol/ghbttest.git (push)
 
 128 git … push -v bt master:refs/heads/master
@@ -97,40 +169,6 @@ git config user.name "cmchaol"
 
 
 
-** 20
-
-| login github               |                  |
-|                            |                  |
-| create a new repository    | cmchaol/ghbttest |
-|                            |                  |
-| write down the information |                  |
-|                            |                  |
-
-
-#+HEADERS: :dir /tmp
-#+BEGIN_SRC sh
-
-# ssh clone this repository   
-
-  git clone git@github.com:cmchaol/ghbttest.git
-
-# move inside the local repository                       
-
-cd ghbttest
-                                                          
-# configure user.email                                   
-
-git config user.email "cmchaol@users.noreply.github.cxom"
-
-# configure user.name 
-
-git config user.name "cmchaol"
-
-#+END_SRC
-
-
-
-** 30
 
 
 * test [2017-05-08 Mon 11:46]

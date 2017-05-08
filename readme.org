@@ -1,1 +1,47 @@
+* setup 2 respository in github, bitbucket and push
+
+** steps
+
+|    |                                |
+| 20 | setup the github repository    |
+|    |                                |
+| 30 | setup the bitbucket repository |
+|    |                                |
+
+** 20
+
+| login github               |                  |
+|                            |                  |
+| create a new repository    | cmchaol/ghbttest |
+|                            |                  |
+| write down the information |                  |
+|                            |                  |
+
+
+#+HEADERS: :dir /tmp
+#+BEGIN_SRC sh
+
+# ssh clone this repository   
+
+  git clone git@github.com:cmchaol/ghbttest.git
+
+# move inside the local repository                       
+
+cd ghbttest
+                                                          
+# configure user.email                                   
+
+git config user.email "cmchaol@users.noreply.github.cxom"
+
+# configure user.name 
+
+git config user.name "cmchaol"
+
+#+END_SRC
+
+
+
+** 30
+
+
 * test [2017-05-08 Mon 11:46]
